@@ -2,43 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Garden for You 🌸</title>
   <style>
     body {
       font-family: 'Georgia', serif;
       background: linear-gradient(to bottom, #fdf6f0, #fff);
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
+      margin: 0;
     }
+
     h1 {
       color: #228b22;
+      font-size: 8vw; /* scales with screen width */
+      margin-top: 0;
     }
+
+    p {
+      font-size: 4vw;
+      color: #333;
+      margin: 10px 0 30px;
+    }
+
     .flower {
-      margin: 30px;
+      margin: 20px auto;
     }
+
     .flower img {
-      width: 200px;
-      height: auto;
+      width: 80%;          /* responsive width */
+      max-width: 300px;    /* won’t get too big on desktop */
+      height: auto;        /* keep aspect ratio */
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: block;
+      margin: 0 auto;
     }
+
     .caption {
-      font-size: 18px;
+      font-size: 4vw;       /* responsive text */
       margin-top: 10px;
       color: #333;
+      width: 90%;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     a {
       display: block;
-      margin-top: 40px;
+      width: 90%;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 15px 0;
+      font-size: 20px;
       text-decoration: none;
       color: #c71585;
-      font-size: 18px;
+      font-weight: bold;
+      background: #ffe4e1;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 10vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+      .caption {
+        font-size: 5vw;
+      }
+      a {
+        font-size: 24px;
+        padding: 20px 0;
+      }
     }
   </style>
 </head>
 <body>
   <h1>some things i guesz..:|</h1>
-  <p>Every things or random thingz (idk what to put na):|</p>
+  <p>Everything or random things (idk what to put na):|</p>
 
   <div class="flower">
     <img src="lily.jpg" alt="lily">
