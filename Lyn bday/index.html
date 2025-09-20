@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Allyna 🎂</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      text-align: center;
+      margin: 0;
+      padding: 50px;
+    }
+    h1 {
+      color: #c71585;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    .gift-box {
+      width: 200px;
+      height: 200px;
+      background: #ff8fab;
+      margin: 80px auto;
+      position: relative;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .gift-box:hover {
+      transform: scale(1.05);
+    }
+    .ribbon {
+      width: 200px;
+      height: 30px;
+      background: #fff;
+      position: absolute;
+      top: 85px;
+      left: 0;
+    }
+    .ribbon:before {
+      content: '';
+      width: 30px;
+      height: 200px;
+      background: #fff;
+      position: absolute;
+      left: 85px;
+      top: -85px;
+    }
+    .hidden {
+      display: none;
+      margin-top: 30px;
+    }
+    a {
+      display: block;
+      margin: 15px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #c71585;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>happy birthday, lyna!</h1>
+  <p>tap the box:D</p>
+
+  <div class="gift-box" onclick="openGift()">
+    <div class="ribbon"></div>
+  </div>
+
+  <div id="surprises" class="hidden">
+    <h2>this isn't even cool💔</h2>
+    <a href="letter.html">letter</a>
+    <a href="playlist.html">playlistt</a>
+    <a href="flowers.html">things</a>
+  </div>
+
+  <script>
+    function openGift() {
+      document.querySelector('.gift-box').style.display = 'none';
+      document.getElementById('surprises').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
