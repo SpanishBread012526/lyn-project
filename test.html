@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ig thats the way things go..</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #fff8f2;
+      color: #333;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #b45cff;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    input {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #b45cff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #8a38d4;
+    }
+    .result {
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>i reasoned im omw to take a nap to make this.<br>
+hope you enjoy it😓😓</h1>
+  <form id="quizForm">
+    <div class="question">
+      1. whos the jjk character tha is ur current husband that u love licking to and has big muscles?<br>
+      <input type="text" name="q1">
+    </div>
+    <div class="question">
+      2. Which romantic movie is famous for the line: “I want all of you, forever, you and me, every day”?<br>
+      <input type="text" name="q2">
+    </div>
+    <div class="question">
+      3. What’s the name of my turtle who hangs from the ceiling?<br>
+      <input type="text" name="q3">
+    </div>
+    <div class="question">
+      4. white haired dude, sometimes a daddy, blindfolded, juicy ahh and called “the strongest juicy sorcerer”?<br>
+      <input type="text" name="q4">
+    </div>
+    <div class="question">
+      5. hes a cursed alpha who tries to take over the world with his fingers? aka king of courses.<br>
+      <input type="text" name="q5">
+    </div>
+    <div class="question">
+      6. juicy guy big bicep, ur other husband, got hit by a purple orb by gojo.<br>
+      <input type="text" name="q6">
+    </div>
+    <div class="question">
+      7. what do u do to nanami? G___? clue: 4 words<br>
+      <input type="text" name="q7">
+    </div>
+    <div class="question">
+      8. cute, fat, yellow sanrio character !!<br>
+      <input type="text" name="q8">
+    </div>
+    <div class="question">
+      9. ur baby who is friends with slowbie?<br>
+      <input type="text" name="q9">
+    </div>
+    <div class="question">
+      10. again bc i dont have any questions na. juicy guy thats in a suit with glasses and died tragically, ur husband<br>
+      <input type="text" name="q10">
+    </div>
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+  <div class="result" id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      const form = document.forms["quizForm"];
+      const answers = {
+        q1: "nanami",
+        q2: "the notebook",
+        q3: "slowbie",
+        q4: "gojo",
+        q5: "sukuna",
+        q6: "toji",
+        q7: "goon",
+        q8: "pompompurin",
+        q9: "potchi",
+        q10: "nanami"
+      };
+
+      let score = 0;
+      for (let key in answers) {
+        let userAnswer = form[key].value.trim().toLowerCase();
+        if (userAnswer === answers[key]) {
+          score++;
+        }
+      }
+
+      if (score === 10) {
+        document.getElementById("result").innerHTML =
+          "🎉 yey ! u unlocked somethingg ^v^ 🎉 switching rnn...";
+        // redirect to your other site (change the link here)
+        setTimeout(() => {
+          window.location.href = "https://spanishbread012526.github.io/lyn-project/index.html";
+        }, 2000);
+      } else {
+        document.getElementById("result").innerHTML =
+          "You got " + score + "/10 correct. Try again, poo HSUAHHA^v^ 💛";
+      }
+    }
+  </script>
+</body>
+</html>
