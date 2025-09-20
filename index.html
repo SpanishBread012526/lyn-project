@@ -2,50 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ig thats the way things go..</title>
   <style>
     body {
       font-family: "Georgia", serif;
       background-color: #fff8f2;
       color: #333;
-      padding: 40px;
+      padding: 20px;
       text-align: center;
+      max-width: 600px;
+      margin: auto;
     }
     h1 {
       color: #b45cff;
+      font-size: 1.3rem;
+      line-height: 1.5;
     }
     .question {
-      margin: 20px 0;
+      margin: 15px 0;
+      text-align: left;
     }
     input {
-      padding: 8px;
+      width: 100%;
+      padding: 10px;
       border-radius: 6px;
       border: 1px solid #aaa;
-      margin-top: 5px;
+      margin-top: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
     }
     button {
       background-color: #b45cff;
       color: white;
       border: none;
       border-radius: 8px;
-      padding: 10px 20px;
+      padding: 12px;
       margin-top: 20px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 1rem;
+      width: 100%;
     }
     button:hover {
       background-color: #8a38d4;
     }
     .result {
-      margin-top: 30px;
-      font-size: 18px;
+      margin-top: 25px;
+      font-size: 1.1rem;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
   <h1>i reasoned im omw to take a nap to make this.<br>
-hope you enjoy it😓😓</h1>
+  hope you enjoy it😓😓</h1>
   <form id="quizForm">
     <div class="question">
       1. whos the jjk character tha is ur current husband that u love licking to and has big muscles?<br>
@@ -118,7 +128,6 @@ hope you enjoy it😓😓</h1>
       if (score === 10) {
         document.getElementById("result").innerHTML =
           "🎉 yey ! u unlocked somethingg ^v^ 🎉 switching rnn...";
-        // redirect to your other site (change the link here)
         setTimeout(() => {
           window.location.href = "https://spanishbread012526.github.io/lyn-project/index.html";
         }, 2000);
