@@ -23,15 +23,27 @@
     }
     a {
   display: block;
-  width: 80%;                 
-  max-width: 300px;          
-  margin: 10px auto;          
-  font-size: clamp(16px, 5vw, 24px); 
+  width: 90%;          /* almost full screen width */
+  max-width: 400px;    /* optional max for desktops */
+  margin: 10px auto;
+  padding: 15px 0;     /* adds height for easier tapping */
+  font-size: 20px;     /* base font size */
   text-decoration: none;
   color: #c71585;
   font-weight: bold;
-  word-wrap: break-word;     
+  background: #ffe4e1; /* optional, looks like a button */
+  border-radius: 10px; /* optional, rounded button look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional, slight shadow */
 }
+
+/* Mobile-specific tweak */
+@media (max-width: 400px) {
+  a {
+    font-size: 24px;
+    padding: 20px 0;    /* taller on small phones */
+  }
+}
+
 
     a:hover {
       text-decoration: underline;
@@ -47,4 +59,5 @@
   <a href="index.html">bacck to giftboxx:]</a>
 </body>
 </html>
+
 
